@@ -280,8 +280,8 @@ $.getJSON("data/CC.geojson", function (data) {
 });
 
 map = L.map("map", {
-  zoom: 7,
-  center: [14.5203, 75.7223], // to change /
+  zoom: 8,
+  center: [14.52038, 75.72239], // to change /
   layers: [OSM, kar, markerClusters, highlight],
   zoomControl: false,
   attributionControl: false

@@ -3,7 +3,7 @@ FSMK GLUGs Information Map
 
 A simple, responsive mapping application showing [FSMK](http://fsmk.org)'s GNU/Linux Users Groups and Community Computing Centers built using [bmcbride](https://github.com/bmcbride/)'s [Bootleaf](https://github.com/bmcbride/bootleaf) with [Bootstrap](http://getbootstrap.com/), [Leaflet](http://leafletjs.com/), and [typeahead.js](http://twitter.github.io/typeahead.js/).
 
-### Live site:
+### Map live at:
 http://yogiks.github.io/fsmk-glugs-map/
 
 ### Features:
