@@ -1,1 +1,65 @@
-{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Amigo Community Center","web":"https://fsmkamigocommunitycenter.wordpress.com/","volunteer":"Jeeva/Karthik R/Kavitha/Sujay/Anita/Veerama/Sangeetha"},"geometry":{"type":"Point","coordinates":[77.5996612,12.9473557]}},{"type":"Feature","properties":{"name":"Ambedkar Community Computing Center(AC3)","web":"http://slumdweller.wikispaces.com/Community+Computing+Center","volunteer":"Mani/Saraswati/Renuka"},"geometry":{"type":"Point","coordinates":[77.602281,12.924048]}},{"type":"Feature","properties":{"name":"Jayanagar 9th Block Community Center","web":"","volunteer":"Shamini M"},"geometry":{"type":"Point","coordinates":[77.597046,12.920711]}},{"type":"Feature","properties":{"name":"Yeshwanthpur Community Center","web":"","volunteer":"Hari Prasad / Vignesh"},"geometry":{"type":"Point","coordinates":[77.561559,13.02354]}}]}
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Amigo Community Center",
+        "web": "https://fsmkamigocommunitycenter.wordpress.com/",
+        "volunteer": "Jeeva/Karthik R/Kavitha/Sujay/Arshiya"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5996612,
+          12.9473557
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ambedkar Community Computing Center(AC3)",
+        "web": "http://slumdweller.wikispaces.com/Community+Computing+Center",
+        "volunteer": "Mani/Saraswati/Renuka/Anita/Veerama/Sangeetha"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.602281,
+          12.924048
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jayanagar 9th Block Community Center",
+        "web": "",
+        "volunteer": "Shamini M"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.597046,
+          12.920711
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Yeshwanthpur Community Center",
+        "web": "",
+        "volunteer": "Hari Prasad / Vignesh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.561559,
+          13.02354
+        ]
+      }
+    }
+  ]
+}
