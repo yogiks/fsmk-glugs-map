@@ -61,7 +61,7 @@ function sidebarClick(id) {
 }
 
 /* Basemap Layers */
-var OSM = L.tileLayer("http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+var OSM = L.tileLayer("http://api.tiles.mapbox.com/v4/mapbox.streets/0/0/0.jpg?access_token=pk.eyJ1IjoieW9naWtzIiwiYSI6IllrS3pnRFkifQ.ROiiCk0bg0VuNB6sCSxSWg", {
   maxZoom: 18,
   subdomains: ["a", "b", "c", "d"],
   attribution: 'Tiles courtesy of <a href="http://osm.org/" target="_blank">OSM</a>. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
@@ -376,7 +376,7 @@ if (document.body.clientWidth <= 767) {
 }
 
 var baseLayers = {
-  "OpenStreetMap": OSM,
+  "Mapbox Streets": OSM,
   "MapQuest": mapquestOSM,
   "Imagery with Streets": mapquestHYB
 };
