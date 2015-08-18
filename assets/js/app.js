@@ -61,10 +61,10 @@ function sidebarClick(id) {
 }
 
 /* Basemap Layers */
-var OSM = L.tileLayer("http://api.tiles.mapbox.com/v4/mapbox.streets/0/0/0.jpg?access_token=pk.eyJ1IjoieW9naWtzIiwiYSI6IllrS3pnRFkifQ.ROiiCk0bg0VuNB6sCSxSWg", {
-  maxZoom: 18,
-  subdomains: ["a", "b", "c", "d"],
-  attribution: 'Tiles courtesy of <a href="http://osm.org/" target="_blank">OSM</a>. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
+var OSM = L.tileLayer("https://{s}.tiles.mapbox.com/v4/openstreetmap.1b68f018/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJhNVlHd29ZIn0.ti6wATGDWOmCnCYen-Ip7Q", {
+  maxZoom: 20,
+  subdomains: ["a", "b", "c"],
+  attribution: 'Tiles courtesy of <a href="http://openstreetmap.in/" target="_blank">OSM India</a>. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
 });
 var mapquestOSM = L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {
   maxZoom: 19,
@@ -376,7 +376,7 @@ if (document.body.clientWidth <= 767) {
 }
 
 var baseLayers = {
-  "Mapbox Streets": OSM,
+  "OSM India": OSM,
   "MapQuest": mapquestOSM,
   "Imagery with Streets": mapquestHYB
 };
