@@ -376,9 +376,9 @@ if (document.body.clientWidth <= 767) {
 }
 
 var baseLayers = {
-  "OSM India": OSM,
-  "MapQuest": mapquestOSM,
-  "Imagery with Streets": mapquestHYB
+  "Kannada OSM": OSM,
+  "OSM India": mapquestOSM,
+//  "Imagery with Streets": mapquestHYB
 };
 
 var groupedOverlays = {
