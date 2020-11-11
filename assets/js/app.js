@@ -66,9 +66,9 @@ var OSM = L.tileLayer("https://{s}.tiles.mapbox.com/v4/yogiks.f4c44375/{z}/{x}/{
   subdomains: ["a", "b", "c"],
   attribution: 'Tiles courtesy of <a href="https://mapbox.com" target="_blank">Mapbox</a> and map styled by Yogesh K S. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
 });
-var mapquestOSM = L.tileLayer("https://{s}.tiles.mapbox.com/v4/openstreetmap.1b68f018/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3NtLWluIiwiYSI6ImNqcnVxMTNrNTJwbHc0M250anUyOW81MjgifQ.cZnvZEyWT5AzNeO3ajg5tg", {
-  maxZoom: 19,
-  subdomains: ["otile1", "otile2", "otile3", "otile4"],
+var OSMIndia = L.tileLayer("https://{s}.tiles.mapbox.com/v4/openstreetmap.1b68f018/{z}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3NtLWluIiwiYSI6ImNqcnVxMTNrNTJwbHc0M250anUyOW81MjgifQ.cZnvZEyWT5AzNeO3ajg5tg", {
+  maxZoom: 20,
+  subdomains: ["a", "b", "c"],
   attribution: 'Tiles courtesy of <a href="http://openstreetmap.in/" target="_blank">OSM India</a>. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
 });
 var mapquestHYB = L.layerGroup([L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg", {
@@ -377,7 +377,7 @@ if (document.body.clientWidth <= 767) {
 
 var baseLayers = {
   "Kannada OSM": OSM,
-  "OSM India": mapquestOSM,
+  "OSM India": OSMIndia,
 //  "Imagery with Streets": mapquestHYB
 };
 
