@@ -61,7 +61,12 @@ function sidebarClick(id) {
 }
 
 /* Basemap Layers */
-var OSM = L.tileLayer("https://{s}.tiles.mapbox.com/v4/yogiks.f4c44375/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoieW9naWtzIiwiYSI6IllrS3pnRFkifQ.ROiiCk0bg0VuNB6sCSxSWg", {
+var OSM = L.tileLayer("https://a.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png", {
+  maxZoom: 20,
+  subdomains: ["a", "b", "c"],
+  attribution: 'Tiles courtesy of <a href="https://map.hotosm.org/" target="_blank">HOT</a> and map styled by Humanitarian OSM Team. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
+});
+var HOT = L.tileLayer("https://{s}.tiles.mapbox.com/v4/yogiks.f4c44375/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoieW9naWtzIiwiYSI6IllrS3pnRFkifQ.ROiiCk0bg0VuNB6sCSxSWg", {
   maxZoom: 20,
   subdomains: ["a", "b", "c"],
   attribution: 'Tiles courtesy of <a href="https://mapbox.com" target="_blank">Mapbox</a> and map styled by Yogesh K S. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
@@ -71,14 +76,6 @@ var OSMIndia = L.tileLayer("https://{s}.tiles.mapbox.com/v4/openstreetmap.1b68f0
   subdomains: ["a", "b", "c"],
   attribution: 'Tiles courtesy of <a href="http://openstreetmap.in/" target="_blank">OSM India</a>. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
 });
-var mapquestHYB = L.layerGroup([L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/sat/{z}/{x}/{y}.jpg", {
-  maxZoom: 18,
-  subdomains: ["oatile1", "oatile2", "oatile3", "oatile4"]
-}), L.tileLayer("http://{s}.mqcdn.com/tiles/1.0.0/hyb/{z}/{x}/{y}.png", {
-  maxZoom: 19,
-  subdomains: ["oatile1", "oatile2", "oatile3", "oatile4"],
-  attribution: 'Labels courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png">. Map data (c) <a href="http://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> contributors, CC-BY-SA.'
-})]);
 
 /* Overlay Layers */
 var highlight = L.geoJson(null);
@@ -376,8 +373,9 @@ if (document.body.clientWidth <= 767) {
 }
 
 var baseLayers = {
-  "Kannada OSM": OSM,
-  "OSM India": OSMIndia,
+  "HOT": OSM,
+  "Kannada OSM": HOT,
+  "OSM India": OSMIndia
 //  "Imagery with Streets": mapquestHYB
 };
 
